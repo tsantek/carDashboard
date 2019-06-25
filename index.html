@@ -118,14 +118,54 @@
                 <div class="lat">LAT G <span>0.00</span></div>
                 <div class="slip"><span>0°</span>SLIP </div>
                 <div class="slip-blue-dot"></div>
-            </div>
 
+                <!-- FRONT LEFT WHEEL -->
+                <div class="left-wheel">
+                    <input type="range" min="1" max="100" value="50" class="slider-left-front slider" id="rangeRightFront">
+                    <div class="circle-wheel-left d-flex justify-content-center align-items-center">
+                        <div class="small-circle-wheel"></div>
+                    </div>
+                    <div class="line-wheel-left"></div>
+                    <div class="left-lb-ft"><span>0</span>lb ft</div>
+                </div>
+
+                <!-- FRONT RIGHT WHEEL -->
+                <div class="right-wheel">
+                    <div class="right-lb-ft"><span>0</span>lb ft</div>
+                    <input onChange="rangeLeft()" onKeyUp="rangeLeft()" type="range" min="1" max="100" value="50" class="slider-right-front slider" id="rangeLeftFront">
+                    <div class="circle-wheel-right">
+                        <div class="small-circle-wheel"></div>
+                    </div>
+                    <div class="line-wheel-right"></div>
+                </div>
+
+
+                <!--REAR RIGHT WHEEL -->
+                <div class="rear-right-wheel">
+                    <input onChange="rangeRight()" onKeyUp="rangeRight()" type="range" min="1" max="100" value="50" class="slider-right-rear slider" id="rangeLeftRear">
+                    <div class="rear-circle-wheel-right">
+                        <div class="small-circle-wheel"></div>
+                    </div>
+                    <div class="rear-line-wheel-right"></div>
+                    <div class="right-lb-ft-rear"><span>0</span>lb ft</div>
+                </div>
+
+                <!-- REAR LEFT WHEEL -->
+                <div class="rear-left-wheel">
+                    <div class="left-lb-ft-rear"><span>0</span>lb ft</div>
+                    <input onChange="rangeLeft()" onKeyUp="rangeLeft()" type="range" min="1" max="100" value="50" class="slider-left-back slider" id="rangeRightRear">
+                    <div class="rear-circle-wheel-left">
+                        <div class="small-circle-wheel"></div>
+                    </div>
+                    <div class="rear-line-wheel-left"></div>
+                </div>
+            </div>
         </div>
     </div>
-
+    <div class="container-kw"></div>
     <div class="container-footer">
     </div>
-
+    <script href="/js/main.js"></script>
 </body>
 
 </html>
