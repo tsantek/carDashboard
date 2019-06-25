@@ -1,11 +1,5 @@
 // LOAD OPEN WINDOW
 
-myWindow.resizeTo(250, 250);
-myWindow.focus();
-
-
-
-
 // RIGHT SIDE SLIDER
 let rightFrontSlider = document.querySelector('#rangeRightFront');
 let rightFrontLine = document.querySelector('.line-wheel-left')
@@ -24,7 +18,6 @@ function rangeRight(wheel, slider) {
     let zero = 333;
     for (let i = 0; i < slider; i++) {
         zero += 0.55;
-        console.log(zero)
         wheel.style.transform = `rotate(${zero}deg)`;
     }
 }
@@ -32,9 +25,9 @@ function rangeRight(wheel, slider) {
 // LEFT SIDE SLIDER
 
 let leftFrontSlider = document.querySelector('#rangeLeftFront');
-let leftFrontLine = document.querySelector('.line-wheel')
+let leftFrontLine = document.querySelector('.line-wheel-right')
 let leftRearSlider = document.querySelector('#rangeLeftRear');
-let leftRearLine = document.querySelector('.rear-line-wheel');
+let leftRearLine = document.querySelector('.rear-line-wheel-right');
 
 
 leftFrontSlider.addEventListener('input', (e) => {
@@ -49,7 +42,6 @@ function rangeLeft(wheel, slider) {
     let zero = 208;
     for (let i = 0; i < slider; i++) {
         zero -= 0.55;
-        console.log(zero)
         wheel.style.transform = `rotate(${zero}deg)`;
     }
 }
