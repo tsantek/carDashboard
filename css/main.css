@@ -200,12 +200,54 @@ header {
     text-align: center;
     position: absolute;
     bottom: 75px;
-    right: 267px;
+    right: 274px;
 }
 
 .lat span {
     display: block;
     font-size: 25px;
+}
+
+.circle-G-force-left-text {
+    left: 40px;
+    color: #555;
+    position: absolute;
+    bottom: 307px;
+}
+
+.circle-G-force-right-text {
+    color: #555;
+    right: 40px;
+    position: absolute;
+    bottom: 307px;
+}
+
+.line-G-force-left {
+    height: 2px;
+    width: 90px;
+    background: linear-gradient(to right, transparent, rgba(190, 196, 206, 0.1));
+    position: absolute;
+    top: 280px;
+    left: 93px;
+}
+
+.line-G-force-right {
+    height: 2px;
+    width: 90px;
+    background: linear-gradient(to left, transparent, rgba(190, 196, 206, 0.1));
+    position: absolute;
+    top: 280px;
+    right: 95px;
+}
+
+.circle-G-force {
+    height: 30px;
+    width: 30px;
+    border-radius: 40px;
+    background: red;
+    position: absolute;
+    bottom: 308px;
+    right: 284px;
 }
 
 
