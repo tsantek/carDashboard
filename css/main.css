@@ -5,6 +5,7 @@
 }
 
 body {
+    height: 1024px;
     background-color: rgba(0, 0, 0, 0.9);
 }
 
@@ -617,4 +618,121 @@ header {
 .temp,
 .tempfan {
     font-size: 30px;
+}
+
+
+/* AC CONTAINER */
+
+.close:before,
+.close:after {
+    position: absolute;
+    right: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: white;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+
+.ac-container-main {
+    color: white;
+    background-color: black;
+    top: 0px;
+    position: relative;
+    width: 768px;
+    height: 1025px;
+    margin: 0 auto;
+    display: none;
+    transition-duration: 3s;
+    transition-property: display;
+}
+
+.open {
+    top: -1022px;
+    display: block;
+}
+
+.temperature {
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 200px;
+    position: absolute;
+}
+
+.main-temp {
+    margin-left: 80px;
+    font-size: 180px;
+    text-align: center;
+}
+
+.passenger-temp {
+    margin-right: 80px;
+    font-size: 180px;
+    text-align: center;
+}
+
+.main-temp-buttons {
+    position: absolute;
+    top: 500px;
+    left: 150px;
+    font-size: 70px;
+}
+
+.main-temp-buttons a {
+    display: block;
+}
+
+.main-up {
+    width: 100px;
+    height: 50px;
+    border-bottom: solid 50px #0a7eff;
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+}
+
+.main-down {
+    margin-top: 30px;
+    width: 100px;
+    height: 50px;
+    border-top: solid 50px #0a7eff;
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+}
+
+.passenger-temp-buttons a {
+    display: block;
+}
+
+.passenger-temp-buttons {
+    position: absolute;
+    top: 500px;
+    right: 150px;
+    font-size: 70px;
+}
+
+.pass-up {
+    width: 100px;
+    height: 50px;
+    border-bottom: solid 50px #0a7eff;
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+}
+
+.pass-down {
+    margin-top: 30px;
+    width: 100px;
+    height: 50px;
+    border-top: solid 50px #0a7eff;
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
 }

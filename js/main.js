@@ -45,3 +45,9 @@ function rangeLeft(wheel, slider) {
         wheel.style.transform = `rotate(${zero}deg)`;
     }
 }
+
+// temp menu
+
+document.querySelector('.footer-ac').addEventListener('click', () => {
+    document.querySelector('.ac-container-main').classList.add("open")
+})
