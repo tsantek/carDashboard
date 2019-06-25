@@ -109,7 +109,7 @@ header {
 .container-main {
     position: relative;
     width: 768px;
-    height: 780px;
+    height: 775px;
     margin: 0 auto;
 }
 
@@ -520,12 +520,101 @@ header {
     margin: 0 auto;
 }
 
+.scale-kw {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.meter-kw {
+    width: 85px;
+}
+
+.scale-kw-meter-line {
+    width: 45px;
+}
+
+.container-kw h1 {
+    padding-bottom: 5px;
+    color: white;
+    text-align: center;
+}
+
+.container-kw h1 span {
+    padding-left: 10px;
+    font-size: 20px;
+}
+
 
 /* Footer */
 
+
+/* AC MENU */
+
 .container-footer {
+    display: flex;
+    flex-direction: row;
     width: 768px;
     height: 40px;
     margin: 0 auto;
-    background-color: green;
+}
+
+.footer-ac {
+    background: black;
+    color: white;
+    overflow: hidden;
+}
+
+.icon {
+    width: 50px;
+}
+
+.icon svg {
+    fill: white;
+    padding: 5px;
+}
+
+.menu-bars {
+    width: 510px;
+}
+
+.small-menu-bars {
+    width: 50px;
+    padding: 2px 0 0 5px;
+    text-align: center;
+}
+
+.small-menu-bars li {
+    border-bottom: solid white 2px;
+    list-style: none;
+    height: 2px;
+    width: 30px;
+    padding-top: 5px;
+}
+
+.small-menu-bars-fan-menu {
+    padding: 10px 0 0 0;
+}
+
+.small-menu-bars-fan-menu ul {
+    padding-left: 234px;
+}
+
+.small-menu-bars-fan-menu li {
+    border-bottom: solid white 2px;
+    list-style: none;
+    height: 2px;
+    width: 100px;
+    padding-top: 5px;
+}
+
+.temp {
+    width: 80px;
+    margin-left: -10px;
+}
+
+.temp,
+.tempfan {
+    font-size: 30px;
 }
